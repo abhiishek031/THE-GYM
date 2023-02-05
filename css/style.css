@@ -850,7 +850,7 @@ input{
     background:black;
     text-indent: 0.5em;
     max-width:100% ;
-    color: black;
+    color: white;
     outline: none;
 }
 input::-webkit-outer-spin-button,
