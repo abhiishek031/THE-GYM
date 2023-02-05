@@ -850,7 +850,7 @@ input{
     background:black;
     text-indent: 0.5em;
     max-width:100% ;
-    color: white;
+    color:#707070;
     outline: none;
 }
 input::-webkit-outer-spin-button,
@@ -862,7 +862,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 button{
-    background:black;
+    background:darkgoldenrod;
     cursor: pointer;
 }
 button:hover{
