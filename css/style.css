@@ -866,6 +866,6 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background:black;
-    color:black;
+    background:#707070;
+    color:darkgoldenrod;
 }
