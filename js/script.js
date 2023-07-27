@@ -41,7 +41,6 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
-
 var swiper = new Swiper(".blogs-slider", {
     spaceBetween: 20,
     grabCursor: true,
