@@ -29,7 +29,7 @@ var swiper = new Swiper(".review-slider", {
     grabCursor: true,
     loop:true,
     autoplay: {
-        delay: 7500,
+        delay: 5000,
         disableOnInteraction: false,
     },
     breakpoints:{
@@ -47,7 +47,7 @@ var swiper = new Swiper(".blogs-slider", {
     grabCursor: true,
     loop:true,
     autoplay: {
-        delay: 7500,
+        delay: 5000,
         disableOnInteraction: false,
     },
     pagination: {

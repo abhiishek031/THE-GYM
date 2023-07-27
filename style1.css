@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+color: white;
+    
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: goldenrod;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: goldenrod;
+  }
+  
+  input[type="submit"]:focus {
+    outline: none;
+  }
+  
+  /* Optional: You can add more styles here as needed */
+  
