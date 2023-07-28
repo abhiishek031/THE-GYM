@@ -27,7 +27,7 @@ body {
   
   .offer {
     font-style: italic;
-    color: #555;
+    color: black;
   }
   
   /* Button Styles */
@@ -36,7 +36,7 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     background-color: goldenrod;
-    color: #fff;
+    color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
