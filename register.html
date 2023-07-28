@@ -1,25 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <title>Mail Form</title>
     <link rel="stylesheet" href="style1.css">
-</head>
-<body>
-    <h2>GYM Registration Form</h2>
-    <form id="registrationForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required><br>
-  
-      <label for="email">Email:</label>
-      <input type="email" id="email" required><br>
-  
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" required><br>
-      <input type="submit" value="Submit">
-    </form>
-    <script src="emailjs-com/dist/email.min.js"></script>
-    <script src="script1.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init("DAcXRcAYxXkD61qdn"); //PUBLIC KEY
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm("service_pva4o89", "template_psuoa5w", this).then(
+              function () {
+                console.log("SUCCESS!");
+              },
+              function (error) {
+                console.log("FAILED...", error);
+              }
+            );
+
+            console.log("Hemlo Bimch");
+          });
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="contact-form">
+        <label>Full Name</label>
+        <div class="user-box">
+            <input type="text" name="to_name" required />
+            <label>Age</label>
+          </div>
+        <div class="user-box">
+          <input type="text" name="from_name" required />
+          <label>Email address</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="to_name" required />
+          <label>Address</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="message" required />
+          <label>Phone No</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="reply_to" required />
+          <label>Click submit to send your response to the Owner </label>
+        </div>
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
 </html>

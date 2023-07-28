@@ -37,7 +37,7 @@ color: white;
     font-size: 16px;
   }
   
-  input[type="submit"] {
+  button{
     width: 100%;
     padding: 10px;
     background-color: goldenrod;
@@ -48,11 +48,11 @@ color: white;
     cursor: pointer;
   }
   
-  input[type="submit"]:hover {
+  button:hover {
     background-color: goldenrod;
   }
   
-  input[type="submit"]:focus {
+  button:focus {
     outline: none;
   }
   
