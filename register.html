@@ -21,7 +21,26 @@
 
             emailjs.sendForm("service_pva4o89", "template_psuoa5w", this).then(
               function () {
+                Toastify({
+                  text: "SUCCESSFULLY REGISTERED",
+                  duration: 1000, //Yahan Pop up ka duration adjust kar sakta hai 3000ms = 3s
+                  newWindow: true,
+                  close: true,
+                  gravity: "top",
+                  position: "center",
+                  stopOnFocus: true,
+                  style: {
+                    background:
+                      "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);", //Yahan pop-up ka colour adjust kar sakte ho. Jo marzi wo colour daal dena. Zaroori nai ki gradient hi ho
+                  },
+                  onClick: function () {},
+                }).showToast();
                 console.log("SUCCESS!");
+
+                setTimeout(
+                  () => location.replace("C:\Users\KIIT\Desktop\The GYM\index.html"),
+                  1000
+                ); //Yahan pe apna homepage ka html file path daal de
               },
               function (error) {
                 console.log("FAILED...", error);
@@ -32,32 +51,36 @@
           });
       };
     </script>
+       <link
+       rel="stylesheet"
+       type="text/css"
+       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+     />
   </head>
 
   <body>
     <div class="login-box">
       <h2>Login</h2>
       <form id="contact-form">
-        <label>Full Name</label>
-        <div class="user-box">
-            <input type="text" name="to_name" required />
-            <label>Age</label>
-          </div>
         <div class="user-box">
           <input type="text" name="from_name" required />
-          <label>Email address</label>
+          <label>From Name</label>
         </div>
         <div class="user-box">
           <input type="text" name="to_name" required />
+          <label>To Name</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="email_address" required />
+          <label>Email address</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="address" required />
           <label>Address</label>
         </div>
         <div class="user-box">
-          <input type="text" name="message" required />
-          <label>Phone No</label>
-        </div>
-        <div class="user-box">
-          <input type="text" name="reply_to" required />
-          <label>Click submit to send your response to the Owner </label>
+          <input type="text" name="phone_number" required />
+          <label>Phone Number</label>
         </div>
         <button type="submit">
           <span></span>
@@ -69,4 +92,8 @@
       </form>
     </div>
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/toastify-js"
+  ></script>
 </html>
