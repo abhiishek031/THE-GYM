@@ -19,7 +19,7 @@
       .login-box h2 {
         margin: 0 0 30px;
         padding: 0;
-        color: #fff;
+        color: goldenrod;
         text-align: center;
       }
 
@@ -31,7 +31,7 @@
         width: 100%;
         padding: 10px 0;
         font-size: 16px;
-        color: #fff;
+        color: goldenrod;
         margin-bottom: 30px;
         border: none;
         border-bottom: 1px solid #fff;
@@ -44,7 +44,7 @@
         left: 0;
         padding: 10px 0;
         font-size: 16px;
-        color: #fff;
+        color: goldenrod;
         pointer-events: none;
         transition: 0.5s;
       }
@@ -75,7 +75,7 @@
 
       .login-box button:hover {
         background: goldenrod;
-        color: #fff;
+        color: #141e30;
         border-radius: 5px;
         box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod,
         0 0 100px goldenrod;

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #141e30;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,9 @@ body {
   
   .discount {
     max-width: 400px;
-    background-color: grey;
+    background-color:black;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px goldenrod;
     padding: 20px;
   }
   .title {
@@ -23,11 +23,12 @@ body {
   .description {
     font-size: 18px;
     margin-bottom: 20px;
+    color: whitesmoke
   }
   
   .offer {
     font-style: italic;
-    color: black;
+    color: goldenrod;
   }
   
   /* Button Styles */
@@ -36,12 +37,12 @@ body {
     padding: 10px 20px;
     font-size: 18px;
     background-color: goldenrod;
-    color: black;
+    color: goldenrod;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.2s;
+    transition: background-color white;
   }
   
   .button:hover {
